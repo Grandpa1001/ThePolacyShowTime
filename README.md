@@ -10,3 +10,6 @@ Currently, two official plugins are available:
 
 
 need instal 3d visual 
+https://www.youtube.com/watch?v=mdj7Z3PCxRg&t=471s&ab_channel=WawaSensei
+
+zastanowic sie jak fbx zmienic w gltf
