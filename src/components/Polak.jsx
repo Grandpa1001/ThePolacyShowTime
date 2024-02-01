@@ -1,13 +1,17 @@
-
-
 import React, { useRef, useEffect } from 'react'
 import { useGLTF, useAnimations } from '@react-three/drei'
+import { useCharacterAnimations } from "../contexts/CharacterAnimations";
 
 const Polak =(props) => {
   const group = useRef()
   const { nodes, materials, animations } = useGLTF('./models/polak.glb')
+  const { setAnimations } = useCharacterAnimations();
   const { actions, names } = useAnimations(animations, group)
   console.log(names);
+
+useEffect(() => {
+  setAnimations(names);
+}, [names]);
 
 useEffect(() => {
   actions[names[0]].reset().fadeIn(0.5).play();

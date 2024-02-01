@@ -11,8 +11,8 @@
   },
   "dependencies": {
     "@emotion/react": "^11.10.5",
-    "@mantine/core": "^5.8.3",
-    "@mantine/hooks": "^5.8.3",
+    "@mantine/core": "^7.5.1",
+    "@mantine/hooks": "^7.5.1",
     "@react-three/drei": "^9.43.3",
     "@react-three/fiber": "^8.9.1",
     "fbx2gltf": "^0.9.7-p1",
