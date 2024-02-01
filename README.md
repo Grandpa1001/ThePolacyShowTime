@@ -21,7 +21,7 @@ get file in to website folder models
 - use  npx gltfjsx public/models/file.glb    (to get jsx file)
 
 
-
+fix .jsx about const export method
 TODO 
 https://www.youtube.com/watch?v=mdj7Z3PCxRg&t=471s&ab_channel=WawaSensei
 
