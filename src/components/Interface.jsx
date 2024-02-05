@@ -8,7 +8,6 @@ const Interface = () => {
    {animations.map((animation) => (
                     <Button key={animation}>Dance</Button>
                 ))}
-                Taniec Polaka
         </Affix>
     )
 }
