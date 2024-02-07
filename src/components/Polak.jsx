@@ -23,7 +23,7 @@ useEffect(() => {
   return (
     <group ref={group} {...props} dispose={null}>
       <group name="Scene">
-        <group name="Armature" rotation={[Math.PI / 2, 0, 0]} scale={0.01}>
+        <group name="Rozciaganie" rotation={[Math.PI / 2, 0, 0]} scale={0.01}>
           <primitive object={nodes.mixamorigHips} />
           <group name="thePolak2">
             <skinnedMesh castShadow name="thePolak2_1" geometry={nodes.thePolak2_1.geometry} material={materials['ThePolac2-Material.001']} skeleton={nodes.thePolak2_1.skeleton} />
