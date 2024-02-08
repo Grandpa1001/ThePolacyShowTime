@@ -21,6 +21,8 @@ export default function App() {
   <MantineProvider theme={theme}>    
     <CharacterAnimationsProvider>
       <Canvas camera={{ position: [1, 1.5, 2.5], fov: 50 }} shadows> 
+
+
               <Experience />
             </Canvas>
       <Interface />
@@ -28,7 +30,3 @@ export default function App() {
   </MantineProvider>
   );
 }
-
-
-
-

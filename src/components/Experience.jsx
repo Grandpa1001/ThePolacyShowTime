@@ -1,6 +1,6 @@
 import { OrbitControls } from "@react-three/drei";
-
 import Polak from "./Polak.jsx"
+
 
 const Experience = () => {
   return (
@@ -27,7 +27,5 @@ const Experience = () => {
   );
 };
 
+
 export default Experience;
-
-
-//       <planeBufferGeometry args={[10, 10, 1, 1]} />
