@@ -32,7 +32,3 @@ Dificult option [How to add more than one animation to first character]
 - Export all to glb
 
 fix .jsx about const export method
-TODO 
-https://www.youtube.com/watch?v=mdj7Z3PCxRg&t=471s&ab_channel=WawaSensei
-
-add UI
