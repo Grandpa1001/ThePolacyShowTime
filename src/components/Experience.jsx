@@ -20,7 +20,7 @@ const Experience = () => {
         rotation={[-0.5 * Math.PI, 0, 0]} 
           position={[-1, -5, -4]} 
           receiveShadow>
-        <planeBufferGeometry args={[10, 10, 1, 1]} />
+
         <shadowMaterial transparent opacity={0.2} />
       </mesh>
     </>
@@ -28,3 +28,6 @@ const Experience = () => {
 };
 
 export default Experience;
+
+
+//       <planeBufferGeometry args={[10, 10, 1, 1]} />
