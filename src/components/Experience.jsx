@@ -18,7 +18,7 @@ const Experience = () => {
        </group>
       <mesh 
         rotation={[-0.5 * Math.PI, 0, 0]} 
-          position={[-1, -5, -4]} 
+          position={[-1, -5, -8]} 
           receiveShadow>
 
         <shadowMaterial transparent opacity={0.2} />
