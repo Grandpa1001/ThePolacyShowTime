@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Affix, Stack, Image, Button, Drawer } from "@mantine/core";
+import { Affix, Stack, Image, Button, Drawer, Anchor } from "@mantine/core";
 import { useCharacterAnimations } from "../contexts/CharacterAnimations";
 
 const Interface = () => {
@@ -17,19 +17,17 @@ const Interface = () => {
 
   return (
     <>
-      <Affix position={{ bottom: 50, right: 20 }}>
+      <Affix position={{ top: 10, right: 10 }}>
         <Stack>
           <a href="https://www.thepolacy.pl/" target="blank">
             <Image src="https://www.thepolacy.pl/_next/static/media/logo.34b813ed.svg" />
           </a>
-          <div />
-          <a href="https://opensea.io/assets/ethereum/0x99903e8ec87b9987bd6289df8eff178d6e533561/1127" target="blank">
+          <Anchor c="gray" href="https://opensea.io/assets/ethereum/0x99903e8ec87b9987bd6289df8eff178d6e533561/1127" target="blank">
             ThePolak #1127
-          </a>
-
+          </Anchor>
           {/* Przycisk otwierający Drawer */}
           <Button size="md" color="gray" variant="light" onClick={handleDrawerToggle}>
-            Wybierz animacje
+            Animacja
           </Button>
 
           {/* Drawer z buttonami */}
