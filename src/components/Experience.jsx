@@ -1,31 +1,26 @@
 import React from 'react';
-import { OrbitControls } from "@react-three/drei";
+import {  useRef } from "react";
+import { OrbitControls, AccumulativeShadows,RandomizedLight } from "@react-three/drei";
+
 
 import Polak from "./Polak.jsx";
+
 
 const Experience = () => {
   return (
     <>
       <OrbitControls />
-      <ambientLight />
-      <directionalLight 
-        position={[5, 5, 5]}
-        intensity={1}
-        color="white"
-        castShadow 
-        shadow-mapSize={1024} 
-      />
-      <group position={[0, -8, -8]}>
-        <Polak position={[0, 0, 0]} />
-      </group>
-      <mesh 
-        rotation={[-0.5 * Math.PI, 0, 0]} 
-        position={[0, -5, 0]} 
-        receiveShadow
-      >
+      <ambientLight color={"rgb(255, 255, 252)"} intensity={1}/>
+      <directionalLight position={[-4, 4, 6]} shadow-mapSize={1024} castShadow intensity={1} />
+      <group position={[0.5, -1.25, 0]}>
+      <Polak position={[0, 0, 0]} />
+      <mesh rotation={[-Math.PI / 2, 0, 0]} position={[0, -0.1, 0]} receiveShadow>
+          <planeGeometry args={[100, 100]} />
+          <shadowMaterial transparent opacity={0.1} />
+        </mesh>
         <planeGeometry attach="geometry" />
-        <meshStandardMaterial attach="material" opacity={0.7} />
-      </mesh>
+      </group>
+
     </>
   );
 };
