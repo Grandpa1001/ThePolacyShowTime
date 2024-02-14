@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Affix, Stack, Image, Button, Drawer, Anchor } from "@mantine/core";
 import { useCharacterAnimations } from "../contexts/CharacterAnimations";
+import logo from "../assets/logo.webp";
 
 const Interface = () => {
   const { animations, animationIndex, setAnimationIndex } = useCharacterAnimations();
@@ -20,7 +21,7 @@ const Interface = () => {
       <Affix position={{ top: 10, right: 10 }}>
         <Stack>
           <a href="https://www.thepolacy.pl/" target="blank">
-            <Image src="https://www.thepolacy.pl/_next/static/media/logo.34b813ed.svg" />
+            <Image src={logo} />
           </a>
           <Anchor c="gray" href="https://opensea.io/assets/ethereum/0x99903e8ec87b9987bd6289df8eff178d6e533561/1127" target="blank">
             ThePolak #1127
