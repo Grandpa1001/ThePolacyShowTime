@@ -7,7 +7,6 @@ const Polak =(props) => {
   const { nodes, materials, animations } = useGLTF('./models/polak.glb')
   const { setAnimations, animationIndex } = useCharacterAnimations();
   const { actions, names } = useAnimations(animations, group)
-  //console.log(names);
 
 useEffect(() => {
   setAnimations(names);

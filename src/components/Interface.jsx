@@ -13,7 +13,7 @@ const Interface = () => {
 
   const handleAnimationButtonClick = (index) => {
     setAnimationIndex(index);
-    setDrawerOpened(false); // Schowaj Drawer po wybraniu animacji
+    setDrawerOpened(false); 
   };
 
   return (
@@ -26,12 +26,9 @@ const Interface = () => {
           <Anchor c="gray" href="https://opensea.io/assets/ethereum/0x99903e8ec87b9987bd6289df8eff178d6e533561/1127" target="blank">
             ThePolak #1127
           </Anchor>
-          {/* Przycisk otwierający Drawer */}
           <Button size="md" color="gray" variant="light" onClick={handleDrawerToggle}>
             Animacja
           </Button>
-
-          {/* Drawer z buttonami */}
           <Drawer
             opened={drawerOpened}
             onClose={() => setDrawerOpened(false)}

@@ -2,9 +2,7 @@ import React from 'react';
 import {  useRef } from "react";
 import { OrbitControls, AccumulativeShadows,RandomizedLight } from "@react-three/drei";
 
-
 import Polak from "./Polak.jsx";
-
 
 const Experience = () => {
   return (

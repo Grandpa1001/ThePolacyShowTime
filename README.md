@@ -36,3 +36,5 @@ Dificult option [How to add more than one animation to first character]
 - Export all to glb
 
 fix .jsx about const export method
+
+
